@@ -1,0 +1,70 @@
+<section class="vh-100" style="background-color: #9A616D;"> 
+    <div class="container py-5 h-100"> 
+      <div class="row d-flex justify-content-center align-items-center h-100"> 
+        <div class="col col-xl-10"> 
+          <div class="card" style="border-radius: 1rem;"> 
+            <div class="row g-0"> 
+              <div class="col-md-6 col-lg-5 d-none d-md-block"> 
+                <img src="https://th.bing.com/th/id/R.4e84d7b511c3dd4b8abf72357095b190?rik=HRyBQWK7irIH4Q&riu=http%3a%2f%2f1.bp.blogspot.com%2f-xtjtndEiFmQ%2fUiVqBgkHx_I%2fAAAAAAAADKo%2fq6IVbcPgr6E%2fs1600%2fram-navmi-lord-rama.jpg&ehk=BDszqZj071GRH3ygPMGBcSFXBNxaTXXGJgMLCokHdaM%3d&risl=&pid=ImgRaw&r=0" 
+                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" /> 
+              </div> 
+              <div class="col-md-6 col-lg-7 d-flex align-items-center"> 
+                <div class="card-body p-4 p-lg-5 text-black"> 
+   
+                  <form> 
+   
+                    <div class="d-flex align-items-center mb-3 pb-1"> 
+                      <!-- <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i> --> 
+                      <span class="h1 fw-bold mb-0"><i  class="fa fa-bank "><span>  Shri&nbsp;Ram&nbsp;&nbsp;Bank</span></i></span> 
+                    </div> 
+   
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5> 
+                    <form #myForm="ngForm" (submit)="onSubmit()"> 
+                      <div class="form-outline mb-4"> 
+                        <div class="form-check"> 
+                          <input 
+                            class="form-check-input" 
+                            type="radio" 
+                            id="adminRadio" 
+                            name="role" 
+                            value="admin" 
+                            [(ngModel)]="login.role" 
+                          /> 
+                          <label class="form-check-label" for="adminRadio">Admin</label>                          
+                          <span><div style="margin-right: 20px;"></div> </span> 
+                          <input 
+                            class="form-check-input" 
+                            type="radio" 
+                            id="customerRadio" 
+                            name="role" 
+                            value="Customer" 
+                            [(ngModel)]="login.role" 
+                          /> 
+                          <label class="form-check-label" for="customerRadio">Customer</label> 
+                        </div> 
+                      </div> 
+                      <input type="text" id="form2Example17" class="form-control form-control-lg" name="username" [(ngModel)]="login.username"/> 
+                      <label class="form-label" for="form2Example17">User Id</label> 
+                    <div class="form-outline mb-4"> 
+                      <input type="password" id="form2Example27" class="form-control form-control-lg" name="password" [(ngModel)]="login.password" /> 
+                      <label class="form-label" for="form2Example27">Password</label> 
+                    </div>                
+                    <div class="pt-1 mb-4"> 
+                      <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button> 
+                    </div> 
+                  </form>                    
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a routerLink="/contacts/registeruser" 
+                        style="color: #393f81;">Register here</a></p> 
+                    <a href="#!" class="small text-muted"><i class="fa fa-facebook x-4">Facebook</i></a> 
+                    <a href="#!" class="small text-muted">Privacy policy</a> 
+                </form>   
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+  <!-- <pre>{{login|json}}</pre>  --> 
+  <!-- <pre>{{userdata|json}}</pre>  -->
